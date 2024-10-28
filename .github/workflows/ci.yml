@@ -46,3 +46,4 @@ jobs:
 #          docker build -t us-east4.pkg.dev/cs1660-cloudcomputing-435323/cloud-iam-permissions-assignment/node-demo:test .
 #          docker push us-east4.pkg.dev/cs1660-cloudcomputing-435323/cloud-iam-permissions-assignment/node-demo:test
 #          --> us-central1.pkg.dev/cc-fall2024/dansc0de/node-demo:v1 <--
+
