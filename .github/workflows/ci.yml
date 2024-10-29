@@ -20,7 +20,7 @@ jobs:
         name: Authenticate to GCP
         with:
           project_id: upheld-welder-439421-m8 # update with your project ID
-          workload_identity_provider: projects/665926523943/locations/global/workloadIdentityPools/lab3-pool/providers/my-repo/operations/bigarl7nqs4qmeeaqha72aq000000000 # update with your Workload Identity Pool
+          workload_identity_provider: projects/665926523943/locations/global/workloadIdentityPools/lab3-pool/providers/my-repo # update with your Workload Identity Pool
 
       # configure/login with docker
       - name: gcloud Configure Docker
