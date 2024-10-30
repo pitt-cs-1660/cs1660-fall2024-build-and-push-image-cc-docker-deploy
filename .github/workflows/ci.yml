@@ -44,6 +44,6 @@ jobs:
 # @note: you can use regular docker commands instead of the shared action
       - name: Build and Push Without Buildx
         run: |
-          docker build -t us-central1.pkg.dev/upheld-welder-439421-m8/lab3-cs1660/my-app:v1 .
-          docker push us-central1.pkg.dev/upheld-welder-439421-m8/lab3-cs1660/my-app:v1
+          docker build -t us-central1.pkg.dev/upheld-welder-439421-m8/lab3-cs1660/node:v1 .
+          docker push us-central1.pkg.dev/upheld-welder-439421-m8/lab3-cs1660/node:v1
   #   --> us-central1.pkg.dev/cc-fall2024/dansc0de/node-demo:v1 <--
