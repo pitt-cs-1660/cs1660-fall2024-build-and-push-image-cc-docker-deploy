@@ -46,4 +46,4 @@ jobs:
         run: |
           docker build -t us-central1.pkg.dev/upheld-welder-439421-m8/lab3-cs1660/my-app:latest .
           docker push us-central1.pkg.dev/upheld-welder-439421-m8/lab3-cs1660/my-app:latest
-          --> us-central1.pkg.dev/cc-fall2024/dansc0de/node-demo:v1 <--
+       #   --> us-central1.pkg.dev/cc-fall2024/dansc0de/node-demo:v1 <--
