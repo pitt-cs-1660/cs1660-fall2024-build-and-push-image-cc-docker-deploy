@@ -20,7 +20,7 @@ jobs:
         name: Authenticate to GCP
         with:
          project_id: 'absolute-seer-440619-n3' # update with your project ID
-         workload_identity_provider: 'projects/119522078005/locations/global/workloadIdentityPools/github/providers/my-repo' # update with your Workload Identity Pool
+         workload_identity_provider: 'projects/119522078005/locations/global/workloadIdentityPools/github/providers/build-and-push-image-jay-compute' # update with your Workload Identity Pool
 
       # configure/login with docker
       - name: gcloud Configure Docker
