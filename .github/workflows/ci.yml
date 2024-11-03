@@ -45,5 +45,5 @@ jobs:
         run: |
           docker build -t us-central1-docker.pkg.dev/absolute-seer-440619-n3/assignment3repo/node-demo:v1 .
           docker push us-central1-docker.pkg.dev/absolute-seer-440619-n3/assignment3repo/node-demo:v1
-          --> us-central1-docker.pkg.dev/absolute-seer-440619-n3/assignment3repo/node-demo:v1 <--
+          --> us-central1.pkg.dev/absolute-seer-440619-n3/assignment3repo/node-demo:v1 <--
 
