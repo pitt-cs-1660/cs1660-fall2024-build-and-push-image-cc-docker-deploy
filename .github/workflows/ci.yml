@@ -20,7 +20,7 @@ jobs:
         name: Authenticate to GCP
         with:
           project_id: 'evocative-tide-435322-n3' # update with your project ID
-          workload_identity_provider: 'projects/230155811834/locations/global/workloadIdentityPools/github' # update with your Workload Identity Pool
+          workload_identity_provider: 'projects/230155811834/locations/global/workloadIdentityPools/github/providers/cs1660a3' # update with your Workload Identity Pool
 
       # configure/login with docker
       - name: gcloud Configure Docker
