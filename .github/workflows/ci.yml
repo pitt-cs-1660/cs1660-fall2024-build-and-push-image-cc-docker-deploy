@@ -38,7 +38,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: us-central1.pkg.dev/absolute-seer-440619-n3/assignment3repo/node-demo:test
+          tags: us-central1-docker.pkg.dev/absolute-seer-440619-n3/assignment3repo/node-demo:test
 
 # @note: you can use regular docker commands instead of the shared action
       - name: Build and Push Without Buildx
