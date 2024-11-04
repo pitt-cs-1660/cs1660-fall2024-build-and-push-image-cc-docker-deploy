@@ -19,8 +19,8 @@ jobs:
         id: auth
         name: Authenticate to GCP
         with:
-         project_id: 'absolute-seer-440619-n3' # update with your project ID
-         workload_identity_provider: 'projects/119522078005/locations/global/workloadIdentityPools/github/providers/build-and-push-image-jay-compute' # update with your Workload Identity Pool
+         project_id: 'onyx-gear-440723-s4' # update with your project ID
+         workload_identity_provider: 'projects/283480886568/locations/global/workloadIdentityPools/github/attribute.repository/pitt-cs-1660/build-and-push-image-jay-compute' # update with your Workload Identity Pool
 
       # configure/login with docker
       - name: gcloud Configure Docker
@@ -38,12 +38,12 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: us-central1-docker.pkg.dev/absolute-seer-440619-n3/assignment3repo/node-demo:test
+          tags: us-central1-docker.pkg.dev/onyx-gear-440723-s4/assign3/node-demo:test
 
 # @note: you can use regular docker commands instead of the shared action
       - name: Build and Push Without Buildx
         run: |
-          docker build -t us-central1.pkg.dev/absolute-seer-440619-n3/assignment3repo/node-demo:v1 .
-          docker push us-central1.pkg.dev/absolute-seer-440619-n3/assignment3repo/node-demo:v1
-          --> us-central1.pkg.dev/absolute-seer-440619-n3/assignment3repo/node-demo:v1 <--
+          docker build -t us-central1.pkg.dev/onyx-gear-440723-s4/assign3/node-demo:v1 .
+          docker push us-central1.pkg.dev/onyx-gear-440723-s4/assign3/node-demo:v1
+          --> us-central1.pkg.dev/onyx-gear-440723-s4/assign3/node-demo:v1 <--
 
