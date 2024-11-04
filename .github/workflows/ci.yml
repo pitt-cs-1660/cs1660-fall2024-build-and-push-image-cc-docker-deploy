@@ -20,7 +20,7 @@ jobs:
         name: Authenticate to GCP
         with:
          project_id: 'onyx-gear-440723-s4' # update with your project ID
-         workload_identity_provider: 'projects/283480886568/locations/global/workloadIdentityPools/github/attribute.repository/pitt-cs-1660/build-and-push-image-jay-compute' # update with your Workload Identity Pool
+         workload_identity_provider: '//iam.googleapis.com/projects/283480886568/locations/global/workloadIdentityPools/github/attribute.repository/pitt-cs-1660/build-and-push-image-jay-compute' # update with your Workload Identity Pool
 
       # configure/login with docker
       - name: gcloud Configure Docker
