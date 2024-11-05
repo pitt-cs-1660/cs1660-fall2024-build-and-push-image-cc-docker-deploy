@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - main
-      - login-gcr.io # @note: use any development branch you would like
+      - remove-double-docker # @note: use any development branch you would like
 
 jobs:
   build-and-push-to-gcr:
@@ -39,11 +39,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: us-central1-docker.pkg.dev/onyx-gear-440723-s4/assign3/node-demo:test
-
-# @note: you can use regular docker commands instead of the shared action
-      - name: Build and Push Without Buildx
-        run: |
-          docker build -t us-central1.pkg.dev/onyx-gear-440723-s4/assign3/node-demo:v1 .
-          docker push us-central1.pkg.dev/onyx-gear-440723-s4/assign3/node-demo:v1
-          --> us-central1.pkg.dev/onyx-gear-440723-s4/assign3/node-demo:v1 <--
 
